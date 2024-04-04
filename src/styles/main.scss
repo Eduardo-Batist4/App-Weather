@@ -16,43 +16,85 @@ body{
 }
 
 .wather-container{
-    width: 35rem;
-    margin-top: 30rem;
+    width: 40rem;
+    height: 55rem;
+    margin-top: 10rem;
     border: 0.2rem solid rgb(250, 248, 248);
+    background-color: rgb(22, 22, 22, 0.2);
+    backdrop-filter: blur(50px);
+    border: 0.2rem solid rgb(255, 255, 255, 0.5);
     border-radius: 0.7rem;
-    background-color: rgb(197, 18, 18);
-    backdrop-filter: blur(10px);
+    padding: 2rem;
     .search-container{
         position: relative;
-        padding: 1rem;
+        // background-color: yellow;
+        width: 100%;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
         .icon-search{
-            font-size: 2rem;
+            top: 1.8rem;
             position: absolute;
-            top: 1.3rem;
-            left: 1.4rem;
-            margin-top: 0.5rem;
+            font-size: 2rem;
+            left: 1rem;
+            color: white;
         }
         .input-search{
-            height: 3.5rem;
+            position: absolute;
+            top: 0;
             width: 100%;
-            border: 0.2rem solid white;
+            height: 100%;
             background-color: transparent;
-            border-radius: 0.7rem;
-            padding-left: 2.5rem;
-            font-size: 2rem;
-            font-weight: bolder;
+            border: 0.2rem solid rgb(255, 255, 255, 0.5);
             outline: none;
+            border-radius: 1rem;
+            font-size: 1.8rem;
+            color: white;
+            text-transform: uppercase;
+            padding: 0 4rem 0 4.2rem;
         }
         .button{
-            right: 1.3rem;
-            top: 1.3rem;
             position: absolute;
-            width: 3rem;
-            font-size: 2rem;
+            top: 0.5rem;
+            right: 0;
+            width: 4rem;
+            height: 100%;
             background-color: transparent;
             border: none;
-            margin-top: 0.5rem;
+            outline: none;
+            font-size: 2rem;
             cursor: pointer;
+            color: white;
+            padding-left: 0 4rem 0 5rem;
+        }
+    }
+    .info-wather-container{
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        img{
+            width: 20rem;
+            height: 15rem;
+            margin-bottom: 1rem;
+        }
+        h3{
+            font-size: 8rem;
+            color: white;
+        }
+        .celsius{
+            font-size: 4rem;
+            position: relative;
+            bottom: 3.3rem;
+            right: 0.5rem;
+            color: white;
+        }
+        p{
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: white;
         }
     }
 }

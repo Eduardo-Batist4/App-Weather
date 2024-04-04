@@ -1,3 +1,4 @@
+import { InfoWather } from "./components/InfoWather"
 import { SearchWather } from "./components/SearchWather"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
     <main className="wather-container"> 
       <SearchWather />
+      <InfoWather />
     </main>
     </>
   )
