@@ -1,3 +1,5 @@
+@import "./variable.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +29,6 @@ body{
     padding: 2rem;
     .search-container{
         position: relative;
-        // background-color: yellow;
         width: 100%;
         height: 5.5rem;
         display: flex;
@@ -37,7 +38,7 @@ body{
             position: absolute;
             font-size: 2rem;
             left: 1rem;
-            color: white;
+            color: $ligth;
         }
         .input-search{
             position: absolute;
@@ -49,7 +50,7 @@ body{
             outline: none;
             border-radius: 1rem;
             font-size: 1.8rem;
-            color: white;
+            color: $ligth;
             text-transform: uppercase;
             padding: 0 4rem 0 4.2rem;
         }
@@ -64,15 +65,14 @@ body{
             outline: none;
             font-size: 2rem;
             cursor: pointer;
-            color: white;
+            color: $ligth;
             padding-left: 0 4rem 0 5rem;
         }
     }
     .info-wather-container{
-        height: 35rem;
+        height: 33rem;
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
         margin-top: 4rem;
         img{
@@ -82,20 +82,61 @@ body{
         }
         h3{
             font-size: 8rem;
-            color: white;
+            color: $ligth;
         }
         .celsius{
             font-size: 4rem;
             position: relative;
             bottom: 3.3rem;
             right: 0.5rem;
-            color: white;
+            color: $ligth;
         }
         p{
             font-size: 2rem;
             text-transform: uppercase;
-            color: white;
+            color: $ligth;
         }
+    }
+    .details-container{
+        display: flex;
+        justify-content: space-around;
+        .humidity-container{
+            display: flex;
+            .icon-humidity{
+                font-size: 4rem;
+                margin-right: 1rem;
+                color: $ligth;
+            }
+            .humidity{
+                span{
+                    font-size: 2rem;
+                    color: $ligth;
+                }
+                p{
+                    font-size: 1.6rem;
+                    color: $ligth;
+                }
+            }
+        }
+        .wind-container{
+            display: flex;
+            .icon-wind{
+                font-size: 4rem;
+                margin-right: 1rem;
+                color: $ligth;
+            }
+            .wind{
+                span{
+                    font-size: 2rem;
+                    color: $ligth;
+                }
+                p{
+                    font-size: 1.6rem;
+                    color: $ligth;
+                }
+            }
+        }
+
     }
 }
 
