@@ -37,10 +37,14 @@ function App() {
     fetchData()
   }, []);
 
+  const handleClick = (value: string) => {
+    console.log(value)
+  }
+
   return (
     <>
     <main className="wather-container"> 
-      <SearchWather />
+      <SearchWather onSearch={handleClick} />
       <InfoWather description={description} temperature={temperature} />
       <DetailsWather humidity={humidity} wind={wind} />
     </main>
