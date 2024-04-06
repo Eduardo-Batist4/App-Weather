@@ -71,6 +71,7 @@ body{
     }
     .info-weather-container-off{
         visibility: hidden;
+        transform: translateY(-100%);
     }
     .info-weather-container{
         height: 33rem;
@@ -78,6 +79,8 @@ body{
         flex-direction: column;
         align-items: center;
         margin-top: 4rem;
+        transform: translateY(0%);
+        transition: transform 500ms ease;
         img{
             width: 20rem;
             height: 15rem;
@@ -102,9 +105,12 @@ body{
     }
     .details-container-off{
         visibility: hidden;
+        transform: translateY(-100%);
     }
     .details-container{
         display: flex;
+        transform: translateY(0%);
+        transition: transform 500ms ease;
         justify-content: space-around;
         .humidity-container{
             display: flex;
@@ -145,10 +151,14 @@ body{
 
     }
     .notFound-container-off{
-        display: none;
+        visibility: hidden;  
+        transform: translateY(-200%);
     }
     .notFound-container{
         text-align: center;
+        transform: translateY(0%);
+        transition: transform 500ms ease;
+        transition-delay: 500ms;
         img{
             width: 30rem;
         }
