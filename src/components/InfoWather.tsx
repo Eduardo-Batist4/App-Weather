@@ -1,16 +1,17 @@
 
-interface InfoWather {
+interface InfoWeather {
     temperature: number | null;
     description: string;
     img: string;
+    classList: string;
 }
 
-export const InfoWather = (props: InfoWather) => {
+export const InfoWeather = (props: InfoWeather) => {
     return (
-        <div className="info-wather-container">
-            <img src={props.img} alt="img-wather"/>
+        <div className={props.classList}>
+            <img src={props.img} alt="img-weather"/>
             <h3 className="temperature-wather">{props.temperature}<span className="celsius">c</span></h3>
-            <p className="description-wather">{props.description}</p>
+            <p className="description-weather">{props.description}</p>
        </div>
     )
 }

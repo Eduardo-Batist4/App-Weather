@@ -17,7 +17,7 @@ body{
     background-image: url('../assets/photo.png');
 }
 
-.wather-container{
+.weather-container{
     width: 40rem;
     height: 55rem;
     margin-top: 10rem;
@@ -69,7 +69,10 @@ body{
             padding-left: 0 4rem 0 5rem;
         }
     }
-    .info-wather-container{
+    .info-weather-container-off{
+        visibility: hidden;
+    }
+    .info-weather-container{
         height: 33rem;
         display: flex;
         flex-direction: column;
@@ -96,6 +99,9 @@ body{
             text-transform: uppercase;
             color: $ligth;
         }
+    }
+    .details-container-off{
+        visibility: hidden;
     }
     .details-container{
         display: flex;
@@ -137,6 +143,20 @@ body{
             }
         }
 
+    }
+    .notFound-container-off{
+        display: none;
+    }
+    .notFound-container{
+        text-align: center;
+        img{
+            width: 30rem;
+        }
+        h3{
+            font-size: 2rem;
+            margin-top: 3rem;
+            color: $ligth;
+        }
     }
 }
 

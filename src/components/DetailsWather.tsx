@@ -4,11 +4,12 @@ import { FaWind } from "react-icons/fa";
 interface Details  {
     humidity: number | null;
     wind: number | null;
+    className: string;
 }
 
-export const DetailsWather = (props: Details) => {
+export const DetailsWeather = (props: Details) => {
     return (
-        <div className="details-container">
+        <div className={props.className}>
             <div className="humidity-container">
                 <span className="icon-humidity"><FaWater /></span>
                 <div className="humidity">

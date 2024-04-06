@@ -2,11 +2,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { ButtonSearch } from "./ButtonSearch";
 import { useState } from "react";
 
-interface SearchWatherProps {
+interface SearchWeatherProps {
     onSearch: (value: string) => void;
 }
 
-export const SearchWather: React.FC<SearchWatherProps> = ({ onSearch }) => { 
+export const SearchWeather: React.FC<SearchWeatherProps> = ({ onSearch }) => { 
     const [searchValue, setSearchValue] = useState('');
 
     const handleSubmit = (ev: React.FormEvent) => {
