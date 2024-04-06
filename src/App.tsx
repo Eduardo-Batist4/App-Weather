@@ -30,7 +30,7 @@ function App() {
       const response = await fetch(url);
   
       if (!response.ok) {
-        throw new Error('Erro ao recuperar os dados do clima');
+        throw new Error('Error recovering weather data');
       }
   
       const data = await response.json();
@@ -48,7 +48,7 @@ function App() {
       console.log(data);
       return data;
     } catch (error) {
-      console.error('Erro ao processar a solicitação:', error);
+      console.error('Error processing request:', error);
       setClassNameNot("notFound-container");
       setClassNameInfo("info-weather-container-off");
       setClassNameDetails("details-container-off");
