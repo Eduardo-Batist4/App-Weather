@@ -20,7 +20,7 @@ export const SearchWeather: React.FC<SearchWeatherProps> = ({ onSearch }) => {
                 <span className="icon-search"><FaLocationDot /></span>
                 <input 
                 type="text" 
-                placeholder="London" 
+                placeholder="search.." 
                 className="input-search" 
                 value={searchValue} 
                 onChange={(ev) => setSearchValue(ev.target.value)} />
