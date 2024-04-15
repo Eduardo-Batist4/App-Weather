@@ -89,7 +89,7 @@ function App() {
     <>
     <main className="weather-container"> 
       <SearchWeather onSearch={handleClick} />
-      <InfoWeather classList={classNameInfo} img={chuva} description={description} temperature={temperature} />
+      <InfoWeather classList={classNameInfo} img={chuva} description={description} temperature={Number(temperature?.toFixed(0))} />
       <DetailsWeather className={classNameDetails} humidity={humidity} wind={wind} />
       <NotFound className={classNameNot} />
     </main>
