@@ -11,6 +11,6 @@ https://app-weather-001.netlify.app
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Eduardo-Batist4/App-Weather/blob/main/src/assets/appWeather.png?raw=true)
+![App Screenshot](https://github.com/Eduardo-Batist4/App-Weather/blob/main/src/assets/Weather.png?raw=true)
 
 
